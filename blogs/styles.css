@@ -1,0 +1,59 @@
+/* Custom styles */
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    color: #94a3b8;
+    cursor: text;
+}
+
+/* Editor styles */
+#editor {
+    min-height: 500px;
+    padding: 1rem;
+    line-height: 1.8;
+}
+
+#editor:focus {
+    outline: none;
+}
+
+/* Theme transitions */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Link styles */
+a {
+    transition: color 0.2s ease;
+}
+
+/* Button hover effects */
+button {
+    transition: all 0.2s ease;
+}
+
+/* Card hover effects */
+article {
+    transition: transform 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
